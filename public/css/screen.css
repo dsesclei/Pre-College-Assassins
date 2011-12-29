@@ -1,0 +1,164 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+.leckerli {
+	font-family: 'Leckerli One', cursive;}
+.bellAurore {
+	font-family: 'La Belle Aurore', cursive;}
+
+#footer ul, #footer li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#fotter li:after {
+	content: "/007c";}
+	
+#footer {
+	text-align:center;
+}
+#footer a:link, #footer a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#ffffff !important;
+	font-size:12px;
+	text-decoration:none;
+}
+html.winner label.ranking{
+  font-weight: normal;
+  font-family: 'Redressed', cursive;
+  font-size: 48px;
+  text-align:right;
+  line-height: 38px;
+  text-shadow: 0 1px 0 #ffffff;
+  display: block;
+  float: left;
+  width: 105px;
+  margin: 5px 30px 0 0;
+  padding: 0; }
+#footer {
+	text-align:center;
+}
+#footer a:link, #footer a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	text-decoration:none;
+}
+
+body { line-height: 1; }
+
+html.winner {
+  background: url(../images/bg2.png) #000000 repeat 0 0;
+  height: 100%; }
+
+html.winner body {
+  font-weight: normal;
+  font-family: "AxelRegular", "Lucida Grande", "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444; }
+  
+html.winner #page {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2; }
+
+html.winner #rad-grad {
+  background: -webkit-gradient(radial, 50% 25%%, 800, 50% 25%, 0, from(rgba(0, 0, 0, 0.4)), to(transparent));
+  background: -moz-radial-gradient(center 200px, transparent, rgba(0, 0, 0, 0.5));
+  position: fixed; }
+
+html.winner #header {
+  background: none;
+  padding: 100px 0 0 0; }
+
+html.winner #branding {
+  display:block;
+  padding-left: 0px;
+  background-position: 110px 0; }
+
+html.winner .container {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden; }
+  
+html.winner #content {
+  border: none;
+  padding: 30px 0;
+  position: relative;
+  z-index: 3; }
+
+html.winner form {
+  margin: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px; }
+
+html.winner form .field {
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFF0), to(#FFFDD0));
+  background: -moz-linear-gradient(#FFFFF0, #FFFDD0);
+  overflow: hidden;
+  border-top: 1px solid #F4F0EC;
+  border-bottom: 1px solid #F3E5AB;
+  padding: 20px 25px;
+  text-shadow: 0 1px 1px #F4F0EC; }
+
+html.winner form .field.divider {
+  background: #eeeeee;
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(153,153,153)), color-stop(0.15, rgb(191,189,190)), color-stop(0.3, rgb(226,226,226)), color-stop(0.5, rgb(249,247,248)), color-stop(0.7, rgb(226,226,226)), color-stop(0.85, rgb(191,189,190)), color-stop(1, rgb(159,160,164)));
+  background-image: -moz-linear-gradient( center bottom, rgb(153,153,153) 0%, rgb(191,189,190) 15%, rgb(226,226,226) 30%, rgb(249,247,248) 50%, rgb(226,226,226) 70%, rgb(191,189,190) 85%, rgb(159,160,164) 100%);
+  overflow: hidden;
+  border-top: 1px solid #F4F0EC;
+  border-bottom: 1px solid #F3E5AB;
+  padding: 10px 15px;
+  font-family: 'Ovo', cursive;
+  text-align:center !important;
+  font-size: 36px;
+  text-shadow: 0 1px 1px #F4F0EC; }
+
+html.winner form .field.header {
+  background: #287fbc;
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(204,153,0)), color-stop(0.54, rgb(255,255,102)), color-stop(1, rgb(204,153,0)));
+  background-image: -moz-linear-gradient( center bottom, rgb(204,153,0) 0%, rgb(255,255,102) 54%, rgb(204,153,0) 100%);
+  padding: 10px 20px;
+  text-align:center;
+  border: none; }
+
+html.winner form .field.header h1 {
+  font-weight: normal;
+  font-family: "AxelBold", "Lucida Grande", "Verdana", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  text-shadow: 0 1px 1px #FFFFFF;
+  font-weight: normal;
+  color: #000000; }
+
+html.winner form .field:first-child {
+  border-radius: 13px 13px 0 0;
+  -webkit-border-radius: 13px 13px 0 0;
+  -moz-border-radius: 13px 13px 0 0; }
+
+html.winner form .field:last-child {
+  border-radius: 0 0 13px 13px;
+  -webkit-border-radius: 0 0 13px 13px;
+  -moz-border-radius: 0 0 13px 13px; }
+  
+.field small {
+	font-size:10px;
+	color:#333333;
+}
+.winnerInfo {
+	text-align:center;}

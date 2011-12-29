@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+		<title>Pre-College Assassins</title>
+		<link href="main.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />	
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800&v2' rel='stylesheet' type='text/css'>
+
+		<script language="javascript" type="text/javascript" src="jQuery.js"></script> 
+		<script language="javascript" type="text/javascript" src="countdown.js"></script> 	
+		<script language="Javascript" type="text/javascript" src="map.js"></script>
+		<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAYBjFKQO7RK3pIWl9dGSOgRQ71maeHliT1ujS2K19Rf0AXAnpixSDZKoChfjK-O0MFIXo6pkGl_mBrA" type="text/javascript"></script>
+		<script language="Javascript" type="text/javascript" src="date.js"></script>
+
+	</head>
+
+	<body onload="initialize()" onunload="GUnload()">
+		<!-- Countdown dashboard start --> 
+		<div id="countdown_dashboard"> 
+
+			<div class="dash days_dash"> 
+				<span class="dash_title">days</span> 
+				<div class="digit"></div> 
+				<div class="digit"></div> 
+			</div> 
+
+			<div class="dash hours_dash"> 
+				<span class="dash_title">hours</span> 
+				<div class="digit"></div> 
+				<div class="digit"></div> 
+			</div> 
+
+			<div class="dash minutes_dash"> 
+				<span class="dash_title">minutes</span> 
+				<div class="digit"></div> 
+				<div class="digit"></div> 
+			</div> 
+
+			<div class="dash seconds_dash"> 
+				<span class="dash_title">seconds</span> 
+				<div class="digit"></div> 
+				<div class="digit"></div> 
+			</div> 
+
+		</div>
+		<div id="font">
+			until Pre-College catches Assassins<br />
+			<div class="text readable">
+				<span class="little">
+					Assassins is a game where everyone is assigned a target. You have to find and eliminate your target while avoiding whoever has you as their target. After a successful assassination, you go after your target's target. The last player alive is the <strong>winner</strong>.
+				</span>
+				<br/>
+				<center>
+					<a href="/register" class="super green button">
+						<span>
+							I'm Ready to Play!
+						</span>
+					</a>
+				</center>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="text">
+				<span class="little" style="font-size: 8pt;">
+					created by Aramael Pe&ntilde;a-Alc&aacute;ntara &amp; Dave Sescleifer
+					<br/>
+					brought to you by Morewood E Tower 5th Floor
+				</span>
+			</div>
+		</div>
+		<div id="map_canvas" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 0;"></div>
+
+	</body>
+</html>

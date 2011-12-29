@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)https://testflightapp.com/register/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="login"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title><%= @title %></title>
+		<link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">		
+	</head>
+	<body class=""><div id="page">
+	    <div id="header">
+    	    <div class="container">
+        	    <div id="branding">
+            	        <h1><img src="images/logo.png"/></h1>
+    	        </div><!--END #branding-->
+   			</div><!--END #container-->
+   		</div><!--END #header-->
+			<div id="content">
+				<div class="container">
+					<% unless @player.errors.empty? %>
+						<p class="help_text" style="float:right">
+							<h3 style="color: #FFF">Errors</h3>
+							<ul>
+								<% @player.errors.each do |error| %>
+									<li style="color: #FFF"><%= error.first %></li>
+								<% end %>
+							</ul>
+						</p>
+					<% end %>
+
+					<form method="post" action="/register">
+						
+						<div class="header field">
+							<h1>Sign up</h1>
+						</div>
+						
+						<div class="field">
+							
+							
+							<label for="id_first_name">First Name</label>
+							<input name="first_name" maxlength="30" autocapitalize="on" autocorrect="off" value="<%= @player.first_name %>" type="text" class="required" id="id_first_name">
+						</div>
+						
+						<div class="field">
+							
+							<label for="id_last_name">Last Name</label>
+							<input name="last_name" maxlength="30" autocapitalize="on" autocorrect="off" value="<%= @player.last_name %>" type="text" class="required" id="id_last_name">
+						</div>
+						
+						<div class="field">
+							
+							<label for="id_email">Email Address</label>
+							<input name="email" maxlength="75" autocapitalize="off" autocorrect="off" type="email" value="<%= @player.email %>" class="required" id="id_email">
+						</div>
+						
+						<div class="field">
+							
+							<label for="id_confirm_email">Program</label>
+							<select name="program" id="subject">
+								<option value="" selected="selected"> - Choose -</option>
+								<option value="Advanced Placement / Early Action">Advanced Placement / Early Action</option>
+								<option value="Architecture">Architecture</option>
+								<option value="Art and Design">Art and Design</option>
+								<option value="Drama">Drama</option>
+								<option value="Music">Music</option>
+								<option value="Game Academy">Game Academy</option>
+								<option value="Pre-College Counselors">Pre-College Counselors</option>
+								<option value="SAMS">SAMS</option>
+							</select>
+						</div>
+						
+						<div class="field">
+							
+							<label for="id_room">Room</label>
+							<input name="room" maxlength="4" autocapitalize="on" autocorrect="off" value="<%= @player.room %>" type="text" class="required" id="id_room" placeholder="505E">
+							<p class="help_text" style="float:right;margin-top:0">Your room number be three numbers and the letter of your tower (such as "505E".)</p>
+						</div>
+						
+						<div class="field">
+							<input class="green_button" type="submit" value="Sign up →">
+						</div>
+					</form>
+				</div>
+        <div id="footer">
+        	<ul>
+            	<li><a href="/register">Sign Up</a></li>
+            	<li><a href="/leaderboard">Leaderboard</a></li>
+            	<li><a href="/rules">Official Rules</a></li>
+            	<li><a href="/privacy">Privacy Policy</a></li>
+                <li class="last"><a href="/terms">Terms of Use</a></li>
+            </ul>
+        </div><!--END #footer--> 
+		</div>
+			
+			<div id="footer" class="container">
+				
+			</div>
+			<div id="rad-grad"></div>
+			<script src="jquery.min.js"></script>
+			<script type="text/javascript" src="jquery.plugins.min.js"></script>
+</div></body></html>

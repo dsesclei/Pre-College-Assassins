@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="login"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title><%= @title %></title>
+
+		<link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+ 			  _gaq.push(['_setAccount', 'UA-7018181-5']);
+  			  _gaq.push(['_trackPageview']);
+
+  			  (function() {
+    		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		  	  })();
+		</script>
+	</head>
+	<body class=""><div id="page">
+
+	<div id="page">
+    	<div id="header">
+	        <div class="container">
+    	        <div id="branding">
+        	            <h1><img src="images/logo.png"/></h1>
+            	</div>
+        	</div>
+    	</div>
+
+			<div id="content">
+                        <div class="container" style="color:white !important;"><center>Welcome <strong>Agent <%= @player.last_name %></strong></center></div>
+				<div class="container">
+
+					<form>
+
+						<div class="header field">
+							<h1>Personal Information</h1>
+						</div>
+						<div class="field">
+							<p class="help_text" style="float:right">The game hasn't started yet. Once it has, the information of your target will appear on this page.</p><br/>
+							<label for="id_first_name">First Name: </label>
+							<span class="targetInfo"><%= @player.first_name %></span>
+						</div>
+
+						<div class="field">
+							<label for="id_last_name">Last Name</label>
+							<span class="targetInfo"><%= @player.last_name %></span>
+						</div>
+
+						<div class="field">
+							<label for="id_confirm_email">Program</label>
+							<span class="targetInfo"><%= @player.program %></span>
+						</div>
+
+						<div class="field">
+							<label for="id_room">Room</label>
+							<span class="targetInfo"><%= @player.room %></span>
+						</div>
+						<div class="field">
+							<label for="id_room">Code</label>
+							<span class="targetInfo"><%= @player.code %></span>
+							<p class="help_text" style="float:right; color: #9a0000">Keep your code secure. When you are killed, you will need to give it to your assassin so that we can confirm that you were killed.</p>
+						</div>
+
+					</form>
+				</div>
+        <div id="footer">
+        	<ul>
+            	<li><a href="/register">Sign Up</a></li>
+            	<li><a href="/leaderboard">Leaderboard</a></li>
+            	<li><a href="/rules">Official Rules</a></li>
+            	<li><a href="/privacy">Privacy Policy</a></li>
+                <li class="last"><a href="/terms">Terms of Use</a></li>
+            </ul>
+        </div><!--END #footer--> 
+			</div>
+
+			<div id="footer" class="container">
+			</div>
+			<div id="rad-grad"></div>
+</div></body></html>

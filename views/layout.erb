@@ -1,0 +1,11 @@
+<html>
+	<head>
+		<title><%= @title || "Assassins" %></title>
+	</head>
+	<body>
+		<% unless @flash[:notice].nil? %>
+			<%== @flash[:notice] %>
+		<% end %>
+		<%== yield %>
+	</body>
+</html>

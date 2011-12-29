@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)https://testflightapp.com/register/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="login"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dashboard | Assassins</title> 
+  
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection">
+    
+    
+</head>
+<body>
+	<div id="page">
+    	<div id="header">
+	        <div class="container">
+    	        <div id="branding">
+        	            <h1><img src="images/logo.png"/></h1>
+            	</div>
+        	</div>
+    	</div>
+	
+        <div id="content">
+                        <div class="container" style="color:white !important;">
+				<center>Welcome Back <strong>Agent <%= @player.last_name %></strong>
+					<% if @flash[:notice] %>
+						<br>
+						<%= @flash[:notice] %>
+					<% end %>
+				</center>
+			</div>
+        	<div class="container">
+				<form method="post">
+				    <div class="header field target">
+        				<h1>Target Information</h1>
+   					</div><!--END #.field.header-->
+    				
+                    <div class="field">
+                        <label for="id_first_name">First Name: </label><span class="targetInfo"><%= @target.first_name %></span>
+                   </div><!--END #field-->
+
+                    <div class="field">
+                        <label for="id_last_name">Last Name</label><span class="targetInfo"><%= @target.last_name %></span>
+                    </div><!--END #field-->
+
+                    <div class="field">
+                        <label for="id_confirm_email">Program</label><span class="targetInfo"><%= @target.program %></span>
+                    </div><!--END #field-->
+    
+                    <div class="field">
+                        <label for="id_room">Room</label><span class="targetInfo"><%= @target.room %></span>
+                    </div><!--END #field-->
+
+                    <div class="field">
+                        <label for="id_kills">Kills</label><span class="targetInfo"><%= @target.kills %></span>
+                         <p class="help_text" style="float:right">Number of Kills your Target has had. The higher the number the better assassin he/she is. Watch out!</p>
+                    </div><!--END #field-->
+                    <div class="field">
+                        <label for="id_passcode">Passcode</label>
+                        <input name="target_code" maxlength="75" autocapitalize="off" autocorrect="off" type="text" class="required" id="target_code">
+                         <p class="help_text" style="float:right">Your targets passcode. They should have given it to you when you killed them.</p>
+                    </div><!--END #field-->
+                    
+                    <div class="field">
+                      <input class="red_button" type="submit" value="Log Kill">
+                    </div><!--END #field-->
+				</form>
+                <br/>
+			<!--	<form>
+				    <div class="header field">
+        				<h1>Previous Kills</h1>
+   					</div>
+    				
+                    <div class="field">
+                        <span class="targetInfo">Aramael Pena-Alcantara
+                        	<br/>
+                            <small>Advanced Placement / Early Action | Had: <strong>10 Kills</strong></small>
+                        </span>
+                   </div>
+
+                    <div class="field">
+                        <span class="targetInfo">Will McKay
+                        	<br/>
+                            <small>Game Design | Had: <strong>5 Kills</strong></small>
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="targetInfo">John Sung
+                        	<br/>
+                            <small>Advanced Placement / Early Action | Had: <strong>1 Kills</strong></small>
+                        </span>
+                   </div>-->
+				</form>
+        </div>
+	<div class="container" style="color:#fff !important;"><center>Have a problem?<strong> Contact us at <a class="whiteLink" href="mailto:aramael@pena-alcantara.com" style="color:#fff; text-decoration:underline !important;">aramael@pena-alcantara.com</a></center></div>
+        <br/>
+	<div id="footer">
+        	<ul>
+            	<li><a href="http://www.facebook.com/precassassins">Like Us</a></li>
+            	<li><a href="/leaderboard">Leaderboard</a></li>
+            	<li><a href="/rules">Official Rules</a></li>
+            	<li><a href="/privacy">Privacy Policy</a></li>
+                <li class="last"><a href="/terms">Terms of Use</a></li>
+            </ul>
+        </div><!--END #footer--> 
+    </div>
+    <div id="footer" class="container">
+        
+    </div>
+<div id="rad-grad"></div>
+</div></body></html>
